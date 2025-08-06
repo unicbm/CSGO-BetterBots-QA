@@ -1,0 +1,66 @@
+# 💡 CSGOBetterBots 插件答疑文档（持续更新）
+
+这是一个面向群内成员的问答文档，整理了使用 Manico 的 CSGOBetterBots 插件时遇到的常见问题与功能说明。每次有新问题或新版本更新，我们会在这里同步补充。
+
+📌 分享本链接即可，所有人打开看到的都是最新版本。
+
+_最后更新：2025年8月6日_
+
+---
+
+## ❓ 常见问题（FAQ）
+
+### Q1：这个插件是干嘛的？
+CSGOBetterBots 是 Manico 开发的 Sourcemod 插件，用来改进 CS:GO 的默认机器人行为。
+插件原项目地址：[https://github.com/manicogaming/CSGOBetterBots)
+它可以让 bot 更聪明、更像人类，比如更锁的枪法、更合理的移动等。
+
+---
+
+### Q2：插件怎么安装？
+
+1. 先确保你有CSGO:Legacy的本地或者服务器客户端。
+2. 下载插件本体及其需要的所有依赖文件。具体见
+3. 放入服务器路径：  
+   `csgo/addons/sourcemod/plugins/`
+4. 重启服务器或输入命令加载插件：  
+   `sm plugins load CSGOBetterBots`
+
+---
+
+## ⚙️ 功能答疑
+
+### Q：为什么机器人有时候不动？
+- 可能周围没有敌人，目标丢失  
+- 请检查配置：目标锁定范围、导航网格、插件是否加载成功  
+- 可开启调试：输入 `sm_botdebug 1` 查看当前 bot 状态
+
+---
+
+### Q：机器人会智能拆弹吗？
+- 会，插件内置了判断逻辑  
+- 确保你已启用该功能：  
+  `bot_defuse_enabled 1`  
+- 机器人难度建议设置为 2 或更高
+
+---
+
+### Q：插件是否支持 C4 放置判断？
+是的，它可以根据场景情况判断是否该 rush A/B、是否该提前守点等，具体可配置参数请查看插件配置文件。
+
+---
+
+## 🧠 建议与反馈
+
+欢迎通过以下方式提交新问题或建议：
+
+- 打开 [Issues 页面](https://github.com/你的用户名/CSGOBetterBots-QA/issues)
+- 或群内直接留言，我来更新文档
+
+---
+
+## 🔗 相关链接
+
+- [插件原项目地址（GitHub）](https://github.com/Manico198/CSGOBetterBots)
+- [SourceMod 官网](https://www.sourcemod.net/)
+- [插件API参考](https://sm.alliedmods.net/new-api/)
